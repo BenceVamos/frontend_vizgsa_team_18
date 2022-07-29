@@ -1,0 +1,28 @@
+/*Az alábbi kódban ne végezzen műveleteket, ezek csak az oldal végső kinézetének vázát formázzák*/
+/*A CSS FORMÁZÁSOKAT Inline Végezze!*/
+body {
+    border: 1px solid black;
+    margin: 0px auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 5px 5px 10px black;
+}
+
+img {
+    width: 150px;
+}
+
+li {
+    list-style-type: square;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+/*A CSS FORMÁZÁSOKAT Inline Végezze!*/

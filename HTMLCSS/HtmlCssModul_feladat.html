@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="HtmlCssModul_feladat.css">
+    <style>
+        body {
+            border: 1px solid black;
+            margin: 0px auto;
+            padding: 20px;
+            width: 60%;
+            box-shadow: 5px 5px 10px black;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: justify;
+            text-indent: 20px;
+        }
+
+        #htmllogo {
+            width: 150px;
+            float: right;
+        }
+
+        li {
+            list-style-type: square;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+        }
+    </style>
+    <title>HTML és CSS modul</title>
+</head>
+
+<body>
+    <h1><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></h1>
+
+    <p> HTML (angolul: <b>HyperText Markup Language</b>=hiperszöveges jelölőnyelv) egy leíró nyelv, melyet
+        weboldalak
+        készítéséhez fejlesztettek ki, és mára már internetes szabvánnyá vált a W3C (World Wide Web Consortium)
+        támogatásával. Az aktuális változata az 5, mely az SGML általános jelölőnyelv egy konkrét alkalmazása (azaz
+        minden
+        5-ös HTML dokumentum egyben az SGML dokumentumszabványnak is meg kell hogy feleljen). Ezt tervek szerint
+        lassan
+        kiszorította volna az XHTML, amely a szintén SGML alapú XML leíró nyelven alapul.</p>
+    <img src="html.png" id="htmllogo" alt="HTML logo" title="HTML logo">
+    <h2>Fontosabb HTML elemek</h2>
+    <ul>
+        <li>Szövegformázás</li>
+        <li>Hiperlinkek készítése</li>
+        <li>Képek beillesztése</li>
+        <li>Listák használata</li>
+        <li>Táblázatok kialakítása</li>
+        <li>Űrlapok kezelése</li>
+    </ul>
+    <script>
+        function teszt01() {
+            let tesztElem = document.querySelector("#htmllogo").alt;
+            if (tesztElem == "HTML logo") {
+                document.write("<tr><td>HTML kép alternatív szöveg</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>HTML kép alternatív szöveg</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt02() {
+            let tesztElem = document.querySelector("#htmllogo").title;
+            if (tesztElem == "HTML logo") {
+                document.write("<tr><td>HTML kép címke</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>HTML kép címke</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt03() {
+            let tesztElem = document.querySelector("#htmllogo").src;
+            if (tesztElem.includes("html.png")) {
+                document.write("<tr><td>HTML kép forrása</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>HTML kép forrása</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt04() {
+            let tesztElem = document.querySelector("h1");
+            if (tesztElem.style.textAlign == "center") {
+                document.write("<tr><td>1-es címsor igazítása</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>1-es címsor igazítása</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt05() {
+            let tesztElem = document.querySelector("p");
+            if (tesztElem.style.textAlign == "justify") {
+                document.write("<tr><td>Bekezdés igazítása</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Bekezdés igazítása</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt06() {
+            let tesztElem = document.querySelector("p");
+            if (tesztElem.style.textIndent == "20px") {
+                document.write("<tr><td>Bekezdés első sori behúzása</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Bekezdés első sori behúzás</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt07() {
+            let tesztElem = document.querySelector("#htmllogo");
+            if (tesztElem.style.float == "right") {
+                document.write("<tr><td>Kép úsztatása</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Kép úsztatása</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt08() {
+            let tesztElem = document.querySelectorAll("li");
+            if (tesztElem.length == 6) {
+                document.write("<tr><td>Számozatlan listalelemek száma</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Számozatlan listalelemek száma</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt09() {
+            let tesztElem = document.querySelector("a");
+            if (tesztElem.href == "https://en.wikipedia.org/wiki/HTML") {
+                document.write("<tr><td>Link útvonala</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Link útvonala</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt10() {
+            let tesztElem = document.querySelector("a");
+            if (tesztElem.target == "_blank") {
+                document.write("<tr><td>Link célpontja</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Link célpontja</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function teszt11() {
+            let tesztElem = document.querySelector("b");
+            if (tesztElem.innerHTML == "HyperText Markup Language") {
+                document.write("<tr><td>Félkövér tag tartalma</td><td>Megfelelő</td>");
+            } else {
+                document.write("<tr><td>Félkövér tag tartalma</td><td>NEM megfelelő</td>")
+            }
+        }
+
+        function allTeszt() {
+            document.write("<table class=\"table table-dark\">");
+            document.write("<caption>Egységtesztek eredményei</caption>")
+            teszt01();
+            teszt02();
+            teszt03();
+            teszt04();
+            teszt05();
+            teszt06();
+            teszt07();
+            teszt08();
+            teszt09();
+            teszt10();
+            teszt11();
+            document.write("</table>");
+        }
+        allTeszt();
+    </script>
+</body>
+
+
+</html>

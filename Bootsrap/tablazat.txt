@@ -1,0 +1,116 @@
+
+<table>
+            <caption>Bootstrap elemek listája</caption>
+            <thead>
+                //Táblázat cella elemeit itt hozza létre
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        text-start
+                    </td>
+                    <td>
+                        A szöveget balra igazítja
+                    </td>
+                    <td>
+                        Szöveg igazítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-center
+                    </td>
+                    <td>
+                        A szöveget középre igazítja
+                    </td>
+                    <td>
+                        Szöveg igazítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-end
+                    </td>
+                    <td>
+                        A szöveget jobbra igazítja
+                    </td>
+                    <td>
+                        Szöveg igazítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-lowercase
+                    </td>
+                    <td>
+                        A szöveget kisbetűssé alakítja
+                    </td>
+                    <td>
+                        Szöveg átalakítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-uppercase
+                    </td>
+                    <td>
+                        A szöveget nagybetűssé alakítja
+                    </td>
+                    <td>
+                        Szöveg átalakítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-capitalize
+                    </td>
+                    <td>
+                        A szöveget nagy kezdőbetűssé alakítja
+                    </td>
+                    <td>
+                        Szöveg átalakítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-success
+                    </td>
+                    <td>
+                        A szöveget zöld színűre állítja
+                    </td>
+                    <td>
+                        Szöveg szín beállítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        .text-danger
+                    </td>
+                    <td>
+                        A szöveget piros színűre állítja
+                    </td>
+                    <td>
+                        Szöveg szín beállítás
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        text-primary
+                    </td>
+                    <td>
+                        A szöveget kék színűre állítja
+                    </td>
+                    <td>
+                        Szöveg szín beállítás
+                    </td>
+                </tr>
+            </tbody>
+        </table>
